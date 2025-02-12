@@ -18,7 +18,7 @@ This system is fully unit tested to ensure reliability and avoid bugs. You can t
 
 The system calculates the required XP for each level using a simple formula:
 
-XP Required = 1000 * Current Level
+XP Required = Exp needed per level * Current Level
 
 This can be modified for more advanced leveling curves.
 
