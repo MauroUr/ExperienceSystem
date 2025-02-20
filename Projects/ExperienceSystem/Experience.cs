@@ -10,12 +10,12 @@ public class Experience
     public event Action OnMaxLevelReached = delegate { };
 
     /// <summary>
-    /// Nivel máximo permitido (0 = sin límite)
+    /// Max level allowed (0 = No limit)
     /// </summary>
     public int maxLevel { get; set; }
 
     /// <summary>
-    /// Experiencia actual del jugador
+    /// Current player experience
     /// </summary>
     public float exp
     {
@@ -28,7 +28,7 @@ public class Experience
     }
 
     /// <summary>
-    /// Nivel actual del jugador
+    /// Current player level
     /// </summary>
     public int Level { get; private set; }
 
@@ -43,9 +43,9 @@ public class Experience
     }
 
     /// <summary>
-    /// Agrega experiencia y maneja subida de nivel.
+    /// Adds experience and handles level ups
     /// </summary>
-    /// <param name="amount">Cantidad de experiencia a agregar</param>
+    /// <param name="amount">Amount of experience to add</param>
     public void AddXP(float amount)
     {
         if (amount < 0)
@@ -70,15 +70,15 @@ public class Experience
     }
 
     /// <summary>
-    /// Devuelve la experiencia necesaria para subir al siguiente nivel.
+    /// Returns experience needed for next level
     /// </summary>
     private float GetXPRequiredForLevel(int level)
     {
-        return EXP_NEEDED_PER_LEVEL * level; // Puedes cambiar esto para usar una fórmula más avanzada
+        return EXP_NEEDED_PER_LEVEL * level; // Puedes cambiar esto para usar una fÃ³rmula mÃ¡s avanzada
     }
 
     /// <summary>
-    /// Reinicia la experiencia a 0 y mantiene el nivel actual.
+    /// Restarts experience to 0 and mantains current level
     /// </summary>
     public void ResetXP()
     {
@@ -86,7 +86,7 @@ public class Experience
     }
 
     /// <summary>
-    /// Reinicia toda la progresión a un nivel base.
+    /// Restarts progression to a base level
     /// </summary>
     public void ResetProgression(int newLevel = 1)
     {
