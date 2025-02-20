@@ -74,7 +74,7 @@ public class Experience
     /// </summary>
     private float GetXPRequiredForLevel(int level)
     {
-        return EXP_NEEDED_PER_LEVEL * level; // Puedes cambiar esto para usar una fórmula más avanzada
+        return EXP_NEEDED_PER_LEVEL * level; // This formula can be changed depending on game design
     }
 
     /// <summary>
